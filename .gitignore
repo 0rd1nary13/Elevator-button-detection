@@ -1,0 +1,112 @@
+# 🎀 雌小鬼的Git忽略文件
+
+# Python相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# 虚拟环境
+venv/
+env/
+ENV/
+.venv/
+
+# IDE相关
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# 模型文件（太大了，不适合上传）
+*.pt
+*.pth
+*.onnx
+*.trt
+*.engine
+runs/
+wandb/
+
+# 数据集（通常太大，不适合直接上传）
+datasets/
+data/
+elevator_dataset/train/images/
+elevator_dataset/val/images/
+elevator_dataset/test/images/
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tiff
+*.webp
+
+# 但保留标签文件和配置
+!elevator_dataset/elevator_data.yaml
+!elevator_dataset/README.md
+!elevator_dataset/train/labels/
+!elevator_dataset/val/labels/
+!elevator_dataset/test/labels/
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 系统文件
+*.bak
+*.swp
+*~
+
+# 截图文件（运行时生成的）
+elevator_detection_screenshot_*.jpg
+
+# Streamlit相关
+.streamlit/
+
+# 测试覆盖率
+.coverage
+htmlcov/
+
+# 环境变量
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
